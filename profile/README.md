@@ -1,12 +1,58 @@
-## Hi there 👋
+# AI/ML学習コミュニティへようこそ
 
-<!--
+こちらは2025/9/26にCodexに書かせた文章を手直ししたものです。
+随時更新します。
 
-**Here are some ideas to get you started:**
+## 🎯 目的
+- 共にAI/MLの知識と実践力を高め、継続的にアウトプットする
+- 最新技術や関連トレンドをキャッチアップし、個人のキャリアに活かす
+- コラボレーションを通じて学習の幅を広げ、コミュニティとして成果を残す
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## 🛠 主な活動
+
+### 絶対やる！
+- 非同期的(チャット中心)なコミュニケーションで情報交換と実践をする
+- AIを使ったレビューやコーディングに慣れる
+
+### 気が向いたらやる!
+- 定期的な勉強会やハンズオンセッションの開催
+- 論文読み会・ライトニングトークでの情報共有
+- コンペティションや個人プロジェクトの成果発表
+- モブリサーチやペアプログラミングでの実践的な取り組み
+
+## 📌 基本ルール
+- お互いをリスペクトし、前向きなフィードバックを心がける
+- 会の活動や共有資料を外部へ出す際は、必ず関係者の合意を得る
+- イベント参加が難しくなった場合は、早めに運営へ連絡する
+- 個人情報や機密情報の取り扱いには十分注意する
+
+## 💬 コミュニケーションガイドライン
+- [Google Chat](https://chat.google.com/room/AAQAbM2IUD0?cls=7)でのオープンな会話を推奨
+- 質問は歓迎。問いの背景や試したことを共有すると回答が得やすくなる
+→ 具体的なルールは後日設定。Discussionを使用予定
+- 議論が長くなりそうな場合はスレッド化・ドキュメント化して整理する
+
+## ✅ メンバーにできること
+- 自主的にイベントを企画して提案する
+- 進行中のプロジェクトに参加し、開発・検証・レビューに貢献する
+- コード、ノートブック、資料などをリポジトリに公開して知の蓄積に協力する
+- 外部イベントや勉強会で得た知見を持ち帰り、コミュニティへ還元する
+
+## 🔍 ロールと役割（例）
+- ファシリテーター：勉強会の進行、アジェンダ調整、振り返りの主導
+- テックリード：技術選定やアーキ設計、実装の方向性レビュー
+- リサーチャー：最新論文や技術の調査、知識共有
+- ドキュメンター：議事録やガイドライン整理、ナレッジベース更新
+
+## 🧭 これから決めていきたいこと
+- 参加メンバーの募集フローとオンボーディングプロセス
+- 成果物の公開方針（OSS化、ブログ投稿、社内共有など）
+- 学習ロードマップ・推奨教材リストの整備
+
+## 📚 リソース例
+- KaggleやSignateなどのコンペプラットフォーム
+- arXiv、Papers with Codeでの最新論文チェック
+- 生成AIやMLOps関連の公式ドキュメント、ホワイトペーパー
+- 過去の勉強会資料やGitHubリポジトリ（随時整備予定）
+
+みなさんの参加と活発なアウトプットをお待ちしています！
