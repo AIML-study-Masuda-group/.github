@@ -53,7 +53,7 @@ flowchart TD
 
     subgraph Development
         DEV[develop<br/>次リリース候補]
-        ISSUE[issue/#123<br/>Issue対応用]
+        ISSUE[issue/123<br/>Issue対応用]
         FEATURE[feature/〇〇<br/>機能開発]
         RELEASE[release/vX.Y<br/>リリース準備]
     end
