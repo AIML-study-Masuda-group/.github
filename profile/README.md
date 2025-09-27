@@ -54,7 +54,7 @@ flowchart TD
     subgraph Development
         DEV[develop<br/>次リリース候補]
         ISSUE[issue/#123<br/>Issue対応用]
-        FEATURE[feature/login<br/>機能開発]
+        FEATURE[feature/〇〇<br/>機能開発]
         RELEASE[release/vX.Y<br/>リリース準備]
     end
 
@@ -64,11 +64,12 @@ flowchart TD
 
     MAIN -. 初回セットアップ .-> DEV
     DEV -->|課題を切る| ISSUE
-    ISSUE -->|作業単位で派生| FEATURE
+    ISSUE -->|必要に応じて<br/>作業単位で派生| FEATURE
+    ISSUE -->|完了後にマージ| DEV
     FEATURE -->|完了後にマージ| DEV
 
     DEV -->|リリース準備| RELEASE
-    RELEASE -->|本番リリース| MAIN
+    RELEASE -->|本番リリース<br/>最初はdevelopからで良いかも| MAIN
     RELEASE -->|差分を戻す| DEV
 
     MAIN -->|緊急対応で派生| HOTFIX
