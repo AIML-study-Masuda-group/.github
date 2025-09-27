@@ -46,16 +46,35 @@
 私たちのOrganization全体では **GitFlow** に従ってブランチを運用します。「どの作業をどのブランチでやればいいの？」がすぐに判断できるよう、以下の流れを基本とします。迷ったらこの図とチェックリストを見てください。
 
 ```mermaid
-graph LR
-    A[main\n本番リリース済み] -->|派生| B[develop\n次リリース候補]
-    B --> F[issue/#123\nIssue対応]
-    F --> C[feature/〇〇\n機能開発]
-    B --> D[hotfix/〇〇\n緊急修正]
-    B --> E[release/vX.Y\nリリース準備]
-    D --> A
-    C --> B
-    E --> A
-    E --> B
+flowchart TD
+    subgraph Production
+        MAIN[main<br/>本番リリース済み]
+    end
+
+    subgraph Development
+        DEV[develop<br/>次リリース候補]
+        ISSUE[issue/123<br/>Issue対応用]
+        FEATURE[feature/〇〇<br/>機能開発]
+        RELEASE[release/vX.Y<br/>リリース準備]
+    end
+
+    subgraph Emergency
+        HOTFIX[hotfix/〇〇<br/>緊急修正]
+    end
+
+    MAIN -. 初回セットアップ .-> DEV
+    DEV -->|課題を切る| ISSUE
+    ISSUE -->|必要に応じて<br/>作業単位で派生| FEATURE
+    ISSUE -->|完了後にマージ| DEV
+    FEATURE -->|完了後にマージ| DEV
+
+    DEV -->|リリース準備| RELEASE
+    RELEASE -->|本番リリース<br/>最初はdevelopからで良いかも| MAIN
+    RELEASE -->|差分を戻す| DEV
+
+    MAIN -->|緊急対応で派生| HOTFIX
+    HOTFIX -->|即時反映| MAIN
+    HOTFIX -->|差分同期| DEV
 ```
 
 ### 基本ルールまとめ
